@@ -12,7 +12,6 @@ groceries.collect do |key, value|
     value
   end
 end
-value.flatten
 end
   
 
