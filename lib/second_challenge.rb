@@ -7,11 +7,13 @@ def second_challenge
   }
 
   #code your solution here!
-groceries.collect do |key, value|
-  value.collect do |value|
-    value.flatten!
+  array = []
+  groceries.collect do |key, value|
+    value.collect do |value|
+      array<<value
+    end
   end
-end
+  array 
 end
   
 
