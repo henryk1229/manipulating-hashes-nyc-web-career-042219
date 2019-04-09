@@ -14,7 +14,8 @@ def first_challenge
   }
 
  contacts.each do |person, data|
-   data.each do |key, value| binding.pry 
+   data.each do |key, value| 
+     binding.pry 
      value.each do |key, value|
       value.delete_if { |value| value == "strawberry" }
     end 
